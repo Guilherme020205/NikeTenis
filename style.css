@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url('img/imgLogos/logoNikeLaranja.webp');
+    background-color: rgba(0, 0, 0, 0.932);
+    background-size: 100px;
+}
+
+.fundo {
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.menu {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(255, 115, 0, 0.664);
+    width: 100vw;
+    height: 60px;
+}
+
+.menu>img {
+    padding: 20px;
+    width: 100px;
+}
+
+.titulo {
+    background-color: rgb(255, 115, 0);
+    box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+    height: 5vw;
+    width: max-content;
+    padding: 5px;
+    position: fixed;
+    top: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.infPreco {
+    padding: 30px;
+    color: #fff;
+    background-color: rgba(51, 50, 50, 0.5);
+    height: 150px;
+    width: 200px;
+    position: fixed;
+    top: 300px;
+    left: 220px;
+    border-radius: 0px 0px 50px;
+}
+
+.infCor {
+    color: #fff;
+    position: fixed;
+    top: 550px;
+    left: 550px;
+
+}
+
+.carrossel {
+    background-color: rgb(255, 115, 0);
+    box-shadow: 0 0 1em rgb(255, 0, 0);
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.img_tenis {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}
