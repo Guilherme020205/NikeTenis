@@ -1,3 +1,4 @@
+/* 320px - 480px = mobile */
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -7,7 +8,7 @@
 body {
     background-image: url('img/imgLogos/logoNikeLaranja.webp');
     background-color: rgba(0, 0, 0, 0.932);
-    background-size: 100px;
+    background-size: 20%;
 }
 
 .fundo {
@@ -22,53 +23,75 @@ body {
     background-color: #fff;
     box-shadow: 2px 2px 2px 2px rgba(255, 115, 0, 0.664);
     width: 100vw;
-    height: 60px;
+    height: 10vh;
 }
 
 .menu>img {
-    padding: 20px;
-    width: 100px;
+    padding: 5%;
+    width: 15vh;
 }
 
 .titulo {
     background-color: rgb(255, 115, 0);
     box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
-    height: 5vw;
-    width: max-content;
-    padding: 5px;
+    height: 70px;
+    width: 230px;
+    padding: 0.5%;
     position: fixed;
-    top: 150px;
+    top: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    border-radius: 0px 15px 15px 0px;
+    overflow-wrap: break-word;
+}
+.titulo > h1{
+    margin: 10px;
 }
 
 .infPreco {
-    padding: 30px;
+    padding: 4%;
     color: #fff;
     background-color: rgba(51, 50, 50, 0.5);
-    height: 150px;
-    width: 200px;
+    height: 120px;
+    width: 130px;
     position: fixed;
-    top: 300px;
-    left: 220px;
+    top: 250px;
+    left: 20px;
     border-radius: 0px 0px 50px;
 }
 
+.infPreco > .p1{
+    color:rgb(115, 115, 115);
+    text-decoration: line-through;
+    font-size: 15px;
+}
+.infPreco > .p2{
+    font-size: 20px;
+}
+.infPreco > .p3{
+    font-size: 12px;
+}
+.infPreco > .p4{
+    color: rgb(0, 173, 29);
+    font-size: 20px;
+    margin: 4px;
+}
 .infCor {
     color: #fff;
     position: fixed;
-    top: 550px;
-    left: 550px;
+    top: 380px;
+    left: 150px;
 
 }
-
+ 
 .carrossel {
     background-color: rgb(255, 115, 0);
     box-shadow: 0 0 1em rgb(255, 0, 0);
     overflow: hidden;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     position: fixed;
-    top: 250px;
+    top: 200px;
     left: 50%;
     border-radius: 5px;
 }
@@ -81,6 +104,385 @@ body {
 
 .img_tenis {
     object-fit: cover;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
+}
+
+/* 480px - 768px = tablet */
+@media (min-width: 480px) {
+    .menu {
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px 2px rgba(255, 115, 0, 0.664);
+        width: 100vw;
+        height: 10vh;
+    }
+    
+    .menu>img {
+        padding: 5%;
+        width: 15vh;
+    }
+    
+    .titulo {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+        height: 90px;
+        width: 300px;
+        padding: 0.5%;
+        position: fixed;
+        top: 150px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 13px;
+        border-radius: 0px 15px 15px 0px;
+        overflow-wrap: break-word;
+    }
+    .titulo > h1{
+        margin: 10px;
+    }
+    
+    .infPreco {
+        padding: 30px;
+        color: #fff;
+        background-color: rgba(51, 50, 50, 0.5);
+        height: 160px;
+        width: 180px;
+        position: fixed;
+        top: 450px;
+        left: 30px;
+        border-radius: 0px 0px 50px;
+
+    }
+    .infPreco > .p1{
+        color:rgb(115, 115, 115);
+        text-decoration: line-through;
+        font-size: 18px;
+    }
+    .infPreco > .p2{
+        font-size: 25px;
+    }
+    .infPreco > .p3{
+        font-size: 15px;
+    }
+    .infPreco > .p4{
+        color: rgb(0, 173, 29);
+        font-size: 25px;
+        margin: 4px;
+    }
+    
+    .infCor {
+        color: #fff;
+        position: fixed;
+        top: 600px;
+        left: 230px;
+    
+    }
+     
+    .carrossel {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 0 0 1em rgb(255, 0, 0);
+        overflow: hidden;
+        height: 230px;
+        width: 230px;
+        position: fixed;
+        top: 350px;
+        left: 230px;
+        border-radius: 5px;
+    }
+    
+    .container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    .img_tenis {
+        object-fit: cover;
+        height: 230px;
+        width: 230px;
+    }
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+    .menu {
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px 2px rgba(255, 115, 0, 0.664);
+        width: 100vw;
+        height: 10vh;
+    }
+    
+    .menu>img {
+        padding: 5%;
+        width: 15vh;
+    }
+    
+    .titulo {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+        height: 130px;
+        width: 500px;
+        padding: 0.5%;
+        position: fixed;
+        top: 180px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        border-radius: 0px 15px 15px 0px;
+        overflow-wrap: break-word;
+    }
+    .titulo > h1{
+        margin: 10px;
+    }
+    
+    .infPreco {
+        padding: 30px;
+        color: #fff;
+        background-color: rgba(51, 50, 50, 0.5);
+        height: 200px;
+        width: 250px;
+        position: fixed;
+        top: 500px;
+        left: 50px;
+        border-radius: 0px 0px 50px;
+
+    }
+    .infPreco > .p1{
+        color:rgb(115, 115, 115);
+        text-decoration: line-through;
+        font-size: 25px;
+    }
+    .infPreco > .p2{
+        font-size: 35px;
+    }
+    .infPreco > .p3{
+        font-size: 25px;
+    }
+    .infPreco > .p4{
+        color: rgb(0, 173, 29);
+        font-size: 35px;
+        margin: 4px;
+    }
+    
+    .infCor {
+        color: #fff;
+        position: fixed;
+        top: 750px;
+        left: 350px;
+        font-size: 30px;
+    }
+     
+    .carrossel {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 0 0 1em rgb(255, 0, 0);
+        overflow: hidden;
+        height: 300px;
+        width: 300px;
+        position: fixed;
+        top: 400px;
+        left: 350px;
+        border-radius: 5px;
+    }
+    
+    .container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    .img_tenis {
+        object-fit: cover;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+    .menu {
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px 2px rgba(255, 115, 0, 0.664);
+        width: 100vw;
+        height: 10vh;
+    }
+    
+    .menu>img {
+        padding: 5%;
+        width: 15vh;
+    }
+    
+    .titulo {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+        height: 170px;
+        width: 700px;
+        padding: 0.5%;
+        position: fixed;
+        top: 250px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        border-radius: 0px 15px 15px 0px;
+        overflow-wrap: break-word;
+    }
+    .titulo > h1{
+        margin: 10px;
+    }
+    
+    .infPreco {
+        padding: 30px;
+        color: #fff;
+        background-color: rgba(51, 50, 50, 0.5);
+        height: 260px;
+        width: 300px;
+        position: fixed;
+        top: 600px;
+        left: 100px;
+        border-radius: 0px 0px 50px;
+
+    }
+    .infPreco > .p1{
+        color:rgb(115, 115, 115);
+        text-decoration: line-through;
+        font-size: 30px;
+    }
+    .infPreco > .p2{
+        font-size: 45px;
+    }
+    .infPreco > .p3{
+        font-size: 30px;
+    }
+    .infPreco > .p4{
+        color: rgb(0, 173, 29);
+        font-size: 35px;
+        margin: 4px;
+    }
+    
+    .infCor {
+        color: #fff;
+        position: fixed;
+        top: 1050px;
+        left: 450px;
+        font-size: 30px;
+    
+    }
+     
+    .carrossel {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 0 0 1em rgb(255, 0, 0);
+        overflow: hidden;
+        height: 450px;
+        width: 450px;
+        position: fixed;
+        top: 550px;
+        left: 450px;
+        border-radius: 5px;
+    }
+    
+    .container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    .img_tenis {
+        object-fit: cover;
+        height: 450px;
+        width: 450px;
+    }
+
+}
+/* 1200 e + = telas maiores, tvs  */
+@media (min-width: 1200px) {
+    .menu {
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px 2px rgba(255, 115, 0, 0.664);
+        width: 100vw;
+        height: 10vh;
+    }
+    
+    .menu>img {
+        padding: 5%;
+        width: 15vh;
+    }
+    
+    .titulo {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+        height: 150px;
+        width: 800px;
+        padding: 0.5%;
+        position: fixed;
+        top: 200px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        border-radius: 0px 15px 15px 0px;
+        overflow-wrap: break-word;
+    }
+    .titulo > h1{
+        margin: 10px;
+    }
+    
+    .infPreco {
+        padding: 30px;
+        color: #fff;
+        background-color: rgba(51, 50, 50, 0.5);
+        height: 260px;
+        width: 300px;
+        position: fixed;
+        top: 550px;
+        left: 100px;
+        border-radius: 0px 0px 50px;
+
+    }
+    .infPreco > .p1{
+        color:rgb(115, 115, 115);
+        text-decoration: line-through;
+        font-size: 30px;
+    }
+    .infPreco > .p2{
+        font-size: 45px;
+    }
+    .infPreco > .p3{
+        font-size: 30px;
+    }
+    .infPreco > .p4{
+        color: rgb(0, 173, 29);
+        font-size: 35px;
+        margin: 4px;
+    }
+    
+    .infCor {
+        color: #fff;
+        position: fixed;
+        top: 950px;
+        left: 550px;
+        font-size: 30px;
+    
+    }
+     
+    .carrossel {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 0 0 1em rgb(255, 0, 0);
+        overflow: hidden;
+        height: 450px;
+        width: 450px;
+        position: fixed;
+        top: 450px;
+        left: 550px;
+        border-radius: 5px;
+    }
+    
+    .container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    .img_tenis {
+        object-fit: cover;
+        height: 450px;
+        width: 450px;
+    }
+
 }
